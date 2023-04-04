@@ -1,0 +1,82 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2a3ac697-9c5a-427a-81ef-aa8d297b0c32}</ProjectGuid>
+    <SubObjectsSortedByName>True</SubObjectsSortedByName>
+    <DownloadApplicationInfo>true</DownloadApplicationInfo>
+    <WriteProductVersion>true</WriteProductVersion>
+    <GenerateTpy>false</GenerateTpy>
+    <Name>mobject_enumerable</Name>
+    <ProgramVersion>3.1.4024.0</ProgramVersion>
+    <Application>{fe51b707-8758-4eaa-8a5f-0cac1c055b68}</Application>
+    <TypeSystem>{96aca61b-f029-4278-9612-c8fcfe6cecd0}</TypeSystem>
+    <Implicit_Task_Info>{2b3dcba1-2576-4348-a170-0ffe3031e50d}</Implicit_Task_Info>
+    <Implicit_KindOfTask>{c6e22574-c3ff-4ae7-85db-1fdaa70c0da8}</Implicit_KindOfTask>
+    <Implicit_Jitter_Distribution>{1d547975-b5ad-4960-b097-7033d425f423}</Implicit_Jitter_Distribution>
+    <LibraryReferences>{a5e2e154-22a6-42f3-bd15-e8e52ccaac2c}</LibraryReferences>
+    <Company>mobject</Company>
+    <Released>false</Released>
+    <Title>mobject-enumerable</Title>
+    <ProjectVersion>0.0.0</ProjectVersion>
+    <DefaultNamespace>mobject-enumerable</DefaultNamespace>
+    <Placeholder>mobject-enumerable</Placeholder>
+    <Author>mobject dev team</Author>
+    <CombineIds>true</CombineIds>
+    <LibraryCategories>
+      <LibraryCategory xmlns="">
+        <Id>{1060d52a-c0ce-4c5f-a334-01a7e2e0ab1e}</Id>
+        <Version>1.0.0.0</Version>
+        <DefaultName>mobject</DefaultName>
+      </LibraryCategory>
+    </LibraryCategories>
+    <SelectedLibraryCategories>
+      <Id xmlns="">{1060d52a-c0ce-4c5f-a334-01a7e2e0ab1e}</Id>
+    </SelectedLibraryCategories>
+  </PropertyGroup>
+  <ItemGroup>
+    <PlaceholderReference Include="mobject-disposable">
+      <DefaultResolution>mobject-disposable, * (mobject)</DefaultResolution>
+      <Namespace>mobject_disposable</Namespace>
+    </PlaceholderReference>
+    <PlaceholderReference Include="Tc2_System">
+      <DefaultResolution>Tc2_System, * (Beckhoff Automation GmbH)</DefaultResolution>
+      <Namespace>Tc2_System</Namespace>
+    </PlaceholderReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces" />
+    <Folder Include="Interfaces\Enumerators" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\Enumerators\I_ForwardEnumerator.TcIO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\I_Enumerable.TcIO">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderResolution Include="mobject-disposable">
+      <Resolution>mobject-disposable, 0.3.1 (mobject)</Resolution>
+    </PlaceholderResolution>
+  </ItemGroup>
+  <ProjectExtensions>
+    <PlcProjectOptions>
+      <XmlArchive>
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
+      <v n="Name">"&lt;ProjectRoot&gt;"</v>
+      <d n="SubKeys" t="Hashtable" />
+      <d n="Values" t="Hashtable" />
+    </o>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
+    </PlcProjectOptions>
+  </ProjectExtensions>
+</Project>

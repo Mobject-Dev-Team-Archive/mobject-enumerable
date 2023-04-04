@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="I_ForwardEnumerator" Id="{c34fbdaf-85cc-079c-2727-3c703d7faf71}">
+    <Declaration><![CDATA[INTERFACE I_ForwardEnumerator EXTENDS I_Disposable
+]]></Declaration>
+    <Property Name="IsValid" Id="{e0014986-3f89-0842-16c5-0daf4dbae224}">
+      <Declaration><![CDATA[PROPERTY PUBLIC IsValid : BOOL]]></Declaration>
+      <Get Name="Get" Id="{8c7b57be-c122-0e01-134a-a1b9a989a029}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Get>
+    </Property>
+    <Method Name="MoveNext" Id="{b85a318f-280b-0b33-3a1b-2fd84090d5e4}">
+      <Declaration><![CDATA[METHOD PUBLIC MoveNext : BOOL
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="TryGet" Id="{74e7636e-1bf0-072e-1443-81e758afc41b}">
+      <Declaration><![CDATA[METHOD PUBLIC TryGet : BOOL;
+VAR_INPUT
+	Destination : ANY;
+END_VAR
+]]></Declaration>
+    </Method>
+    <Method Name="TryGetTo" Id="{27f1142b-c93b-09f4-098e-5eaf2edb7678}">
+      <Declaration><![CDATA[METHOD PUBLIC TryGetTo : BOOL;
+VAR_INPUT
+	Destination : PVOID;
+	DestinationSize : UDINT;
+END_VAR
+]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>
