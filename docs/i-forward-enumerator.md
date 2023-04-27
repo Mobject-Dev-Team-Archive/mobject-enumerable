@@ -77,16 +77,16 @@ END_WHILE;
 enumerator.Dispose();
 ```
 
-### TryGetTo(Destination, DestinationSize)
+### TryGetTo(DestinationAddress, DestinationSize)
 
 Tries to return the data held at the current location in the enumerator to the destination symbol using address and size.
 
 #### Parameters
 
-| Parameters      | Datatype | Description                                              |
-| --------------- | -------- | -------------------------------------------------------- |
-| Destination     | PVOID    | The destination address used to store the returned data. |
-| DestinationSize | UDINT    | The destination size used to store the returned data.    |
+| Parameters         | Datatype | Description                                              |
+| ------------------ | -------- | -------------------------------------------------------- |
+| DestinationAddress | PVOID    | The destination address used to store the returned data. |
+| DestinationSize    | UDINT    | The destination size used to store the returned data.    |
 
 #### Return
 
