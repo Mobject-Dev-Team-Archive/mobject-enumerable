@@ -18,15 +18,15 @@ END_VAR
     <Method Name="TryGet" Id="{74e7636e-1bf0-072e-1443-81e758afc41b}">
       <Declaration><![CDATA[METHOD PUBLIC TryGet : BOOL;
 VAR_INPUT
-	Destination : ANY;
+    Destination : ANY;
 END_VAR
 ]]></Declaration>
     </Method>
     <Method Name="TryGetTo" Id="{27f1142b-c93b-09f4-098e-5eaf2edb7678}">
       <Declaration><![CDATA[METHOD PUBLIC TryGetTo : BOOL;
 VAR_INPUT
-	Destination : PVOID;
-	DestinationSize : UDINT;
+    DestinationAddress : PVOID;
+    DestinationSize : UDINT;
 END_VAR
 ]]></Declaration>
     </Method>
