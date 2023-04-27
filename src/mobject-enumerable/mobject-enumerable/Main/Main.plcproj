@@ -33,6 +33,7 @@
   <ItemGroup>
     <PlaceholderReference Include="mobject-enumerable">
       <DefaultResolution>mobject-enumerable, * (mobject)</DefaultResolution>
+      <Namespace>mobject_enumerable</Namespace>
     </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
@@ -51,6 +52,11 @@
     <None Include="Main.tmc">
       <SubType>Content</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PlaceholderResolution Include="mobject-enumerable">
+      <Resolution>mobject-enumerable, 0.1.0 (mobject)</Resolution>
+    </PlaceholderResolution>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
