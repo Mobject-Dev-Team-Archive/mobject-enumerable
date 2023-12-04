@@ -2,12 +2,12 @@
 
 ## Definition
 
-|             |                            |
-| ----------- | -------------------------- |
-| Namespace   | mobject-enumerable         |
-| Library     | mobject-enumerable         |
-| Inheritance | \_\_System.IQueryInterface |
-| Implements  |                            |
+|             |                                                              |
+| ----------- | ------------------------------------------------------------ |
+| Namespace   | mobject-enumerable                                           |
+| Library     | mobject-enumerable                                           |
+| Inheritance | [I_Disposable](http://disposable.mobject.org/#/i-disposable) |
+| Implements  |                                                              |
 
 ## Remarks
 
