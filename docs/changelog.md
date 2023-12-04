@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## v1.0.0-beta
 
 - Changed status from alpha to beta.
 - Updated documentation to support dark mode.
@@ -8,10 +8,10 @@
 - Added unit tests.
 - Updated to support mobject-disposable v1.0.0-beta.
 
-## 0.1.0
+## v0.1.0-alpha
 
 - Refactor of I_ForwardEnumerator TryGetTo method.
 
-## 0.0.0
+## v0.0.0-alpha
 
 - Alpha release.
