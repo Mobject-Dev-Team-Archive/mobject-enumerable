@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MockForwardEnumerator" Id="{2e6c3769-f351-4ddb-8d9d-8e5e37b6dae9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK MockForwardEnumerator IMPLEMENTS I_ForwardEnumerator
+VAR
+	isValidState : BOOL;
+	moveNextState : BOOL;
+	tryGetState : BOOL;
+	tryGetToState : BOOL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Folder Name="Constructor" Id="{71773b41-cbd0-4631-9138-937346179e04}" />
+    <Method Name="Dispose" Id="{1a2fc6bc-59bb-4553-98f8-9788a903aac0}">
+      <Declaration><![CDATA[METHOD PUBLIC Dispose
+VAR_INPUT
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="FB_init" Id="{d3dc33ee-318e-4c8f-b3a3-5df67aa5fc45}" FolderPath="Constructor\">
+      <Declaration><![CDATA[METHOD FB_init : BOOL
+VAR_INPUT
+	bInitRetains : BOOL; // if TRUE, the retain variables are initialized (warm start / cold start)
+	bInCopyCode : BOOL;  // if TRUE, the instance afterwards gets moved into the copy code (online change)
+	IsValidState : BOOL;
+	MoveNextState : BOOL;
+	TryGetState : BOOL;
+	TryGetToState : BOOL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[THIS^.isValidState := IsValidState;
+THIS^.moveNextState := MoveNextState;
+THIS^.tryGetState := TryGetState;
+THIS^.tryGetToState := TryGetToState;]]></ST>
+      </Implementation>
+    </Method>
+    <Property Name="IsValid" Id="{9f776dc0-5e22-4124-a32e-69ffb7e8a4dd}">
+      <Declaration><![CDATA[PROPERTY PUBLIC IsValid : BOOL]]></Declaration>
+      <Get Name="Get" Id="{d06d178d-3ea8-4500-b7e0-e1c5c8a7a326}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[IsValid := isValidState;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Method Name="MoveNext" Id="{c2008efe-8a07-4f0a-96f0-420f056950bf}">
+      <Declaration><![CDATA[METHOD PUBLIC MoveNext : BOOL]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[MoveNext := moveNextState;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="TryGet" Id="{65d2b07a-f135-4612-be9e-8340f238ce6c}">
+      <Declaration><![CDATA[METHOD PUBLIC TryGet : BOOL;
+VAR_INPUT
+    Destination : ANY;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[TryGet := tryGetState;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="TryGetTo" Id="{cceaf1c8-8859-4dc7-ba80-2408a6e5c28a}">
+      <Declaration><![CDATA[METHOD PUBLIC TryGetTo : BOOL;
+VAR_INPUT
+    DestinationAddress : PVOID;
+    DestinationSize : UDINT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[TryGetTo := tryGetToState;]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

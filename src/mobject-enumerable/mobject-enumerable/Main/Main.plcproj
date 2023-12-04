@@ -23,18 +23,25 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Tests\ForwardEnumeratorInterface_TestSuite.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\EnumerableInterface_TestSuite.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\Mocks\MockEnumerable.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\Mocks\MockForwardEnumerator.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DUTs" />
-    <Folder Include="GVLs" />
-    <Folder Include="VISUs" />
+    <Folder Include="Tests" />
     <Folder Include="POUs" />
+    <Folder Include="Tests\Mocks" />
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderReference Include="mobject-enumerable">
-      <DefaultResolution>mobject-enumerable, * (mobject)</DefaultResolution>
-      <Namespace>mobject_enumerable</Namespace>
-    </PlaceholderReference>
     <PlaceholderReference Include="Tc2_Standard">
       <DefaultResolution>Tc2_Standard, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc2_Standard</Namespace>
@@ -47,6 +54,9 @@
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
     </PlaceholderReference>
+    <PlaceholderReference Include="TcUnit">
+      <DefaultResolution>TcUnit, * (www.tcunit.org)</DefaultResolution>
+    </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Main.tmc">
@@ -54,9 +64,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PlaceholderResolution Include="mobject-enumerable">
-      <Resolution>mobject-enumerable, 0.1.0 (mobject)</Resolution>
-    </PlaceholderResolution>
+    <LibraryReference Include="mobject-enumerable,1.0.0,mobject">
+      <Namespace>mobject_enumerable</Namespace>
+    </LibraryReference>
   </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>

@@ -1,12 +1,14 @@
 <p align="center">
-  <img width="460" src="./images/logo.svg">
+  <picture>
+    <img class="top-logo" alt="mobject main logo" src='./images/logo-light.svg'>
+  </picture>
 </p>
 
 > A framework and guide for writing object oriented programs in structured text.
 
 ## The mobject-enumerable Library
 
-This is one of the many libraries of mobject. This lightweight library focuses on the common interfaces and functionality of iterators, enumerators and enumerable objects.
+This is one of the many libraries of [mobject](http://mobject.org). This lightweight library focuses on the common interfaces and functionality of iterators, enumerators and enumerable objects.
 
 ## What is mobject?
 

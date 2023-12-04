@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="EnumerableInterface_TestSuite" Id="{9c41e908-1d0b-4310-8742-53a2d0bb79f0}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK PUBLIC EnumerableInterface_TestSuite EXTENDS TcUnit.FB_TestSuite
+VAR
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CompileCheckWithMockEnumerable();]]></ST>
+    </Implementation>
+    <Method Name="CompileCheckWithMockEnumerable" Id="{b31b1045-76da-442d-a56e-cc3cb80cf92f}">
+      <Declaration><![CDATA[METHOD PUBLIC CompileCheckWithMockEnumerable
+VAR
+	mockEnumerable : MockEnumerable;
+	forwardEnumerator : I_ForwardEnumerator;
+	isValidResult : BOOL;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[TEST('CompileCheckWithMockEnumerable');
+
+forwardEnumerator := mockEnumerable.GetEnumerator();
+isValidResult := forwardEnumerator.IsValid;
+forwardEnumerator.Dispose();
+
+AssertFalse(
+	Condition := isValidResult,
+	Message := 'IsValid did not match the mock set value'
+);
+
+TEST_FINISHED();]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>
