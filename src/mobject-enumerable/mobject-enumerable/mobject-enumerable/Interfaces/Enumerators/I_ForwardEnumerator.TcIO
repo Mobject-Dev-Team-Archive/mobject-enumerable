@@ -11,6 +11,12 @@
     <Method Name="MoveNext" Id="{b85a318f-280b-0b33-3a1b-2fd84090d5e4}">
       <Declaration><![CDATA[METHOD PUBLIC MoveNext : BOOL]]></Declaration>
     </Method>
+    <Method Name="Reset" Id="{0f78e995-65f0-4ba9-9964-ba2117aa49e8}">
+      <Declaration><![CDATA[METHOD Reset
+VAR_INPUT
+END_VAR
+]]></Declaration>
+    </Method>
     <Method Name="TryGet" Id="{74e7636e-1bf0-072e-1443-81e758afc41b}">
       <Declaration><![CDATA[METHOD PUBLIC TryGet : BOOL;
 VAR_INPUT

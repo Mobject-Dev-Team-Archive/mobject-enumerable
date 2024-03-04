@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.1.0-beta
+
+- Added reset to enumerators
+
 ## v1.0.0-beta
 
 - Changed status from alpha to beta.

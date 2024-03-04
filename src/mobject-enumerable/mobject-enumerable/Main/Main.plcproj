@@ -56,6 +56,7 @@
     </PlaceholderReference>
     <PlaceholderReference Include="TcUnit">
       <DefaultResolution>TcUnit, * (www.tcunit.org)</DefaultResolution>
+      <Namespace>TcUnit</Namespace>
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
@@ -64,7 +65,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <LibraryReference Include="mobject-enumerable,1.0.0,mobject">
+    <LibraryReference Include="mobject-enumerable,1.1.0,mobject">
       <Namespace>mobject_enumerable</Namespace>
     </LibraryReference>
   </ItemGroup>
