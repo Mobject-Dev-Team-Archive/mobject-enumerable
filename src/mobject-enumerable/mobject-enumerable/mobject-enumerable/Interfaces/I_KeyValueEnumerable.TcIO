@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="I_KeyValueEnumerable" Id="{20008510-7de6-487c-a47d-e77e9065eb7d}">
+    <Declaration><![CDATA[INTERFACE I_KeyValueEnumerable EXTENDS __SYSTEM.IQueryInterface
+]]></Declaration>
+    <Method Name="GetKeyValueEnumerator" Id="{4ab6031b-ffe2-4b31-864b-d4e1976557b3}">
+      <Declaration><![CDATA[METHOD PUBLIC GetKeyValueEnumerator : I_KeyValueForwardEnumerator]]></Declaration>
+    </Method>
+  </Itf>
+</TcPlcObject>

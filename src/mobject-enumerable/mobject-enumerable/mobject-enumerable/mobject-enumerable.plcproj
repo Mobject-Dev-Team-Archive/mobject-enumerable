@@ -48,7 +48,13 @@
     <Compile Include="Interfaces\Enumerators\I_ForwardEnumerator.TcIO">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Interfaces\Enumerators\I_KeyValueForwardEnumerator.TcIO">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Interfaces\I_Enumerable.TcIO">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\I_KeyValueEnumerable.TcIO">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
