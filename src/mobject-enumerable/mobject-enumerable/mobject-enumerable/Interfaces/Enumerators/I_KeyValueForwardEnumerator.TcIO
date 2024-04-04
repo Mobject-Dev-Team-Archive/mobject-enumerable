@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <Itf Name="I_KeyValueForwardEnumerator" Id="{3fde7387-1e08-408c-b29f-5e830234e54e}">
+    <Declaration><![CDATA[INTERFACE I_KeyValueForwardEnumerator EXTENDS I_ForwardEnumerator
+]]></Declaration>
+    <Property Name="Key" Id="{45ff3600-1289-4f04-86cd-f93b0a88016a}">
+      <Declaration><![CDATA[PROPERTY Key : T_MAXSTRING]]></Declaration>
+      <Get Name="Get" Id="{eae56a82-43c5-4f5b-835d-3a5af80e7c33}">
+        <Declaration><![CDATA[]]></Declaration>
+      </Get>
+    </Property>
+  </Itf>
+</TcPlcObject>

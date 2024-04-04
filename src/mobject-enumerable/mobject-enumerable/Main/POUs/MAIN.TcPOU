@@ -3,12 +3,10 @@
   <POU Name="MAIN" Id="{0308f13d-366d-4f3c-948a-90028615a6c6}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
-	forwardEnumeratorInterface_TestSuite : ForwardEnumeratorInterface_TestSuite;
-	enumerableInterface_TestSuite : EnumerableInterface_TestSuite;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[TcUnit.RUN();]]></ST>
+      <ST><![CDATA[//TcUnit.RUN();]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>

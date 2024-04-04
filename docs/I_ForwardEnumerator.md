@@ -6,7 +6,7 @@
 | ----------- | ------------------------------------------------------------ |
 | Namespace   | mobject-enumerable                                           |
 | Library     | mobject-enumerable                                           |
-| Inheritance | [I_Disposable](http://disposable.mobject.org/#/i-disposable) |
+| Inheritance | [I_Disposable](http://disposable.mobject.org/#/I_Disposable) |
 | Implements  |                                                              |
 
 ## Remarks
@@ -44,6 +44,18 @@ END_WHILE;
 // you must dispose enumerators as they are new objects.
 enumerator.Dispose();
 ```
+
+### Reset()
+
+Resets the enumerator to before the first item.
+
+#### Parameters
+
+N/A
+
+#### Return
+
+N/A
 
 ### TryGet(Destination)
 
