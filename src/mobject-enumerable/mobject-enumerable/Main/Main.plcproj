@@ -23,23 +23,10 @@
     <Compile Include="POUs\MAIN.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Tests\ForwardEnumeratorInterface_TestSuite.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Tests\EnumerableInterface_TestSuite.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Tests\Mocks\MockEnumerable.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Tests\Mocks\MockForwardEnumerator.TcPOU">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Tests" />
     <Folder Include="POUs" />
-    <Folder Include="Tests\Mocks" />
   </ItemGroup>
   <ItemGroup>
     <PlaceholderReference Include="Tc2_Standard">

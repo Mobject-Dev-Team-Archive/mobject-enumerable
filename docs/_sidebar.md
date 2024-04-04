@@ -6,8 +6,10 @@
 
   - Interfaces
 
-    - [I_Enumerable](i-enumerable.md)
-    - [I_ForwardEnumerator](i-forward-enumerator.md)
+    - [I_Enumerable](I_Enumerable.md)
+    - [I_ForwardEnumerator](I_ForwardEnumerator.md)
+    - [I_KeyValueEnumerable](I_KeyValueEnumerable.md)
+    - [I_KeyValueForwardEnumerator](I_KeyValueForwardEnumerator.md)
 
 - Guides
 
