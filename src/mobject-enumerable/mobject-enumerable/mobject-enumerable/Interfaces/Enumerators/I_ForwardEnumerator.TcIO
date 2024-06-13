@@ -12,10 +12,7 @@
       <Declaration><![CDATA[METHOD PUBLIC MoveNext : BOOL]]></Declaration>
     </Method>
     <Method Name="Reset" Id="{0f78e995-65f0-4ba9-9964-ba2117aa49e8}">
-      <Declaration><![CDATA[METHOD Reset
-VAR_INPUT
-END_VAR
-]]></Declaration>
+      <Declaration><![CDATA[METHOD PUBLIC Reset]]></Declaration>
     </Method>
     <Method Name="TryGet" Id="{74e7636e-1bf0-072e-1443-81e758afc41b}">
       <Declaration><![CDATA[METHOD PUBLIC TryGet : BOOL;
