@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.2.0-beta
+
+- Updated to support mobject-disposable v1.1.1
+- Minor style change
+
 ## v1.1.0-beta
 
 - Added reset to enumerators.
